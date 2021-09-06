@@ -1,0 +1,39 @@
+{
+  "name": "svelte-vite-windi",
+  "license": "MIT",
+  "author": "Ales Vaupotic <ales@reepolee.com>",
+  "homepage": "https://github.com/reepolee/svelte-vite-windi",
+  "description": "Svelte + Vite + Windi Starter template",
+  "version": "1.0.5",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^1.0.0-next.6",
+    "markdown-it": "^12.2.0",
+    "markdown-it-abbr": "^1.0.4",
+    "markdown-it-anchor": "^8.3.0",
+    "markdown-it-collapsible": "^1.0.0",
+    "markdown-it-deflist": "^2.1.0",
+    "markdown-it-footnote": "^3.0.3",
+    "markdown-it-ins": "^3.0.1",
+    "markdown-it-mark": "^3.0.1",
+    "markdown-it-sanitizer": "^0.4.3",
+    "markdown-it-sub": "^1.0.0",
+    "markdown-it-sup": "^1.0.0",
+    "markdown-it-task-lists": "^2.1.1",
+    "markdown-it-toc-and-anchor": "^4.2.0",
+    "markdown-it-video": "^0.6.3",
+    "path": "^0.12.7",
+    "sanitize-html": "^2.4.0",
+    "svelte": "^3.37.0",
+    "svelte-navigator": "^3.1.5",
+    "svelte-tree": "^0.7.0",
+    "tourlou": "file:./tourlou",
+    "vite": "^2.1.5",
+    "vite-plugin-restart": "0.0.1",
+    "vite-plugin-windicss": "^0.13.0"
+  }
+}

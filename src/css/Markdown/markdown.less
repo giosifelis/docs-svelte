@@ -1,0 +1,242 @@
+// main: ../_Less/_index.less
+:root {
+ --title-color: #333;
+ --color-scale-gray-0: #fafbfc;
+ --color-white: white;
+ --elevated-background: var(--color-white);
+ --text-color: var(--title-color);
+//  --border: #f1f3f4;
+ --border: #e2e2e2;
+ --border-table: #dfe2e5;
+ --mono-font: "JetBrains Mono";
+ --monospace: var(--mono);
+}
+
+.markdown-body {
+  color: #333;
+  line-height: 1.4;
+  text-align: justify;
+  padding: 1em;
+  // margin: auto;
+  max-width: 52em;
+  // background: #fefefe;
+
+  img {
+    max-width: 200px;
+    border-radius: 2px;
+    margin:3px;
+    border: 1px solid var(--border);
+  }
+ 
+ h1, h2, h3, h4, h5, h6 {
+  position: relative;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  font-weight: 500;
+  line-height: 1.4;
+  cursor: text;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--title-color);
+  // letter-spacing: -0.04rem;
+}
+
+h6 {
+  margin-top: .6rem;
+  margin-bottom: .2rem;
+}
+
+h1:hover a.anchor, h2:hover a.anchor, h3:hover a.anchor, h4:hover a.anchor, h5:hover a.anchor, h6:hover a.anchor {
+  text-decoration: none;
+}
+
+h1 tt, h1 code, h2 tt, h2 code, h3 tt, h3 code, h4 tt, h4 code, h5 tt, h5 code, h6 tt, h6 code {
+  font-size: inherit;
+}
+
+h1 {
+  font-size: 2.25em;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.75em;
+  line-height: 1.225;
+}
+
+h3 {
+  font-size: 1.5em;
+  line-height: 1.43;
+}
+
+h4 {
+  font-size: 1.25em;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+h6 {
+  font-size: 1em;
+  color: #777;
+}
+
+
+p, blockquote, ul, ol, dl, table {
+  margin: 0.8em 0;
+ 
+}
+
+li>ol, li>ul {
+  margin: 0 0;
+}
+
+h1 code, h2 code, h3 code, h4 code, h5 code, h6 code {
+  border: inherit;
+  background-color: inherit;
+}
+
+hr {
+  height: 1px;
+  padding: 0;
+  margin: 16px 0;
+  background-color: #e7e7e7;
+  border: 0 none;
+  overflow: hidden;
+  box-sizing: content-box;
+}
+
+li p.first {
+  display: inline-block;
+}
+
+ul, ol {
+  padding-left: 30px;
+}
+
+ul:first-child, ol:first-child {
+  margin-top: 0;
+}
+
+ul:last-child, ol:last-child {
+  margin-bottom: 0;
+}
+
+blockquote, table {
+  color: var(--text-color);
+  border: 1px solid var(--border);
+  background-color: var(--elevated-background);
+  border-radius: 3px;
+  padding: 12px 16px;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+// input[type=checkbox][checked]{
+//   outline:5px solid red; 
+
+//   box-shadow: inset 0 0 0 0 red;
+// }
+
+
+blockquote blockquote {
+  padding-right: 0;
+  border-radius: 0;
+  border: 0;
+  border-left: 4px solid var(--border);
+}
+
+table {
+  padding: 0;
+  word-break: initial;
+  border-collapse: collapse;
+
+}
+
+table tr {
+  // border: 1px solid #dfe2e5;
+  margin: 0;
+  padding: 0;
+}
+
+table tr:nth-child(2n), thead {
+  background-color: #f8f8f8;
+}
+
+table th {
+  font-weight: bold;
+  border-bottom: 1px solid var(--border-table);
+  border-bottom: 0;
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table td {
+  margin: 0;
+  padding: 6px 13px;
+}
+
+table th:first-child, table td:first-child {
+  margin-top: 0;
+}
+
+table th:last-child, table td:last-child {
+  margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+  padding-left: 4px;
+}
+
+.code-tooltip {
+  border: 1px solid var(--border);
+  background-color: var(--elevated-background);
+  border-radius: 4px;
+  font-family: var(--general-font);
+  box-shadow: none!important;
+
+}
+
+code, tt {
+  color: var(--text-color);
+  border: 1px solid var(--border);
+  background-color: var(--elevated-background);
+  border-radius: 2px;
+  padding: 0;
+  padding: 2px 4px 0px 4px;
+  font-size: 0.9em;
+  // font-family: var(--mono);
+  font-variant-ligatures: common-ligatures!important;
+  font-feature-settings: "liga" 1!important;
+}
+
+
+
+
+  /* ----- markdown END -----*/
+}
+  /* iPad
+-------------------------------------------------------- */
+  @media only screen and (max-device-width: 1024px) {
+    body {
+      font-size: 120%;
+      line-height: 1.4;
+    }
+  } /* @iPad */
+
+  /* iPhone
+-------------------------------------------------------- */
+  @media only screen and (max-device-width: 480px) {
+    body {
+      text-align: left;
+    }
+    article,
+    footer {
+      width: auto;
+    }
+    article {
+      padding: 0 10px;
+    }
+  } 

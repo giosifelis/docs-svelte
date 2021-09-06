@@ -1,0 +1,17 @@
+{
+  "name": "tourlou",
+  "description": "local folder with files for everyone's use",
+  "version": "1.0.0",
+  "author": "2i",
+  "copywrite": {
+    "names": [
+      "George Iosifelis",
+      "Andreas Iosifelis"
+    ]
+  },
+  "contributors": [
+    "George Iosifelis",
+    "Andreas Iosifelis"
+  ],
+  "license": "ISC"
+}
