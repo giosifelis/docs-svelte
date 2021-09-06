@@ -1,9 +1,9 @@
 {
-  "name": "svelte-vite-windi",
+  "name": "doc-mamager",
   "license": "MIT",
-  "author": "Ales Vaupotic <ales@reepolee.com>",
-  "homepage": "https://github.com/reepolee/svelte-vite-windi",
-  "description": "Svelte + Vite + Windi Starter template",
+  "author": "George Iosifelis <cubapiano@gmail.com>",
+  "homepage": "https://github.com/giosifelis/docs-svelte",
+  "description": "Markdown file manager/editor",
   "version": "1.0.5",
   "scripts": {
     "dev": "vite",
